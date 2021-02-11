@@ -16,10 +16,10 @@
 
 |   주차  | 링크                                                 | 상태            |
 |  :--:  | :-------------------------------------------------: | :-------------:|
-|  1주차  | [`1966 프린터 큐`](https://www.acmicpc.net/problem/1966) | ![status][DOING] |
+|  1주차  | [`1966 프린터 큐`](https://www.acmicpc.net/problem/1966) | ![status][DONE] |
 |  1주차  | [`14503 로봇 청소기`](https://www.acmicpc.net/problem/14503) | ![status][DOING] |
 |                                                                                                                                                           |
-|  2주차  | | ![status][DONE] | | ![status][DONE]  |
+|  2주차  | |  |
                                                                                                                                               
 
 |   일지  | 내용                                                 |
@@ -29,4 +29,4 @@
 
 
 [DOING]: https://img.shields.io/badge/-DOING-31AE0F
-[DONE]: https://img.shields.io/badge/-DONE-0885CC
+[DONE]: https://img.shields.io/badge/-DONE-lightgrey
