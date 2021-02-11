@@ -63,3 +63,4 @@ public class BOJ_1966 {
 		bw.close();
 	}
 }
+
