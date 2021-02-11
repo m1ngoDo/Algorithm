@@ -28,5 +28,5 @@
 |  21. 02. 13  |  |
 
 
-[DOING]: https://img.shields.io/badge/-DOING-31AE0F
-[DONE]: https://img.shields.io/badge/-DONE-lightgrey
+[DOING]: https://img.shields.io/badge/-DOING-red
+[DONE]: https://img.shields.io/badge/-DONE-brightgreen
