@@ -20,10 +20,10 @@ public class BOJ_1966 {
 	}
 
 	public static void main(String[] args) throws Exception {
-
+		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
 		int test = Integer.parseInt(br.readLine());
 		StringTokenizer st;
 
