@@ -17,7 +17,7 @@
 |   주차  | 링크                                                 | 상태            |
 |  :--:  | :-------------------------------------------------: | :-------------:|
 |  1주차  | [`1966 프린터 큐`](https://www.acmicpc.net/problem/1966) | ![status][DONE] |
-|  1주차  | [`14503 로봇 청소기`](https://www.acmicpc.net/problem/14503) | ![status][DOING] |
+|  1주차  | [`14503 로봇 청소기`](https://www.acmicpc.net/problem/14503) | ![status][DONE] |
 |                                                                                                                                                           |
 |  2주차  | |  |
                                                                                                                                               
