@@ -84,7 +84,7 @@ public class BOJ_1260 {
 		int v = Integer.parseInt(st.nextToken());
 		
 		visited = new boolean[n+1];
-//		// 2차원 배열 선언 _ index 사용하기 위해 +1
+		// 2차원 배열 선언 _ index 사용하기 위해 +1
 		int graph[][] = new int[n+1][n+1];		
 		
 		for(int i = 0; i < m; i++) {
