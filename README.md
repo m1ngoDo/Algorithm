@@ -14,18 +14,19 @@
 
 ## Problem
 
-|   주차  | 링크                                                 | 상태            |
-|  :--:  | :-------------------------------------------------: | :-------------:|
-|  1주차  | [`1966 프린터 큐`](https://www.acmicpc.net/problem/1966) | ![status][DONE] |
-|  1주차  | [`14503 로봇 청소기`](https://www.acmicpc.net/problem/14503) | ![status][DOING] |
+|   주차  | 링크                                                 | 상태            | 링크                                                 | 상태            |
+|  :--:  | :-------------------------------------------------: | :-------------:| :-------------------------------------------------: | :-------------:|
+|  1주차  | [`1966 프린터 큐`](https://www.acmicpc.net/problem/1966) | ![status][DONE] | [`14503 로봇 청소기`](https://www.acmicpc.net/problem/14503) | ![status][DONE] |
 |                                                                                                                                                           |
-|  2주차  | |  |
+|  2주차  | [`1260 DFS와 BFS`](https://www.acmicpc.net/problem/1260) | ![status][DOING] | [`2638 치즈`](https://www.acmicpc.net/problem/2638) | ![status][DOING] |
+|  2주차  | [`7562 나이트의 이동`](https://www.acmicpc.net/problem/7562) | ![status][DOING] | [`16947 서울 지하철 2호선`](https://www.acmicpc.net/problem/16947) | ![status][DOING] |
+|                                                                                                                                                           |
                                                                                                                                               
 
 |   일지  | 내용                                                 |
 |  :--  | :------------------------------------------------- |
-|  21. 02. 10  | 첫 모임, 규칙 정함 |
-|  21. 02. 13  |  |
+|  21. 02. 10  | 첫 모임, 규칙 정함 / Simulation |
+|  21. 02. 13  | DFS, BFS |
 
 
 [DOING]: https://img.shields.io/badge/-DOING-red
