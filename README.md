@@ -10,7 +10,7 @@
 
 * 일정 : 2021년 02월 10일 ~ 
 * 정기 모임 : 매주 토요일 오후 1시
-* Solved.ac ~Gold 문제
+* [Solved.ac](https://solved.ac/problems/level)  ![Gold] 문제
 
 
 ## Problem
@@ -33,3 +33,4 @@
 
 [DOING]: https://img.shields.io/badge/-DOING-red
 [DONE]: https://img.shields.io/badge/-DONE-brightgreen
+[Gold]: https://img.shields.io/badge/4-Gold-yellow
