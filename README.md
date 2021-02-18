@@ -20,7 +20,7 @@
 |  1주차  | [`1966 프린터 큐`](https://www.acmicpc.net/problem/1966) | ![status][DONE] | [`14503 로봇 청소기`](https://www.acmicpc.net/problem/14503) | ![status][DONE] |
 |                                                                                                                                                           |
 |  2주차  | [`1260 DFS와 BFS`](https://www.acmicpc.net/problem/1260) | ![status][DONE] | [`2638 치즈`](https://www.acmicpc.net/problem/2638) | ![status][DOING] |
-|  2주차  | [`7562 나이트의 이동`](https://www.acmicpc.net/problem/7562) | ![status][DOING] | [`16947 서울 지하철 2호선`](https://www.acmicpc.net/problem/16947) | ![status][DOING] |
+|  2주차  | [`7562 나이트의 이동`](https://www.acmicpc.net/problem/7562) | ![status][DOING] | [`16947 서울 지하철 2호선`](https://www.acmicpc.net/problem/16947) | ![status][DONE] |
 |                                                                                                                                                           |
                                                                                                                                               
 
