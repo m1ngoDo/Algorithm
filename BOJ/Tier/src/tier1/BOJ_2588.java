@@ -2,7 +2,7 @@ package tier1;
 
 import java.util.Scanner;
 
-public class BOJ_1_2588 {
+public class BOJ_2588 {
 
 	public static void main(String[] args) {
 

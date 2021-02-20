@@ -2,7 +2,7 @@ package tier1;
 
 import java.util.Scanner;
 
-public class BOJ_1_1008 {
+public class BOJ_1001 {
 
 	public static void main(String[] args) {
 
@@ -11,8 +11,6 @@ public class BOJ_1_1008 {
 		int a = sc.nextInt();
 		int b = sc.nextInt();
 
-		double answer = (double) a / b;
-
-		System.out.println(answer);
+		System.out.println(a - b);
 	}
 }

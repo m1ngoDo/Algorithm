@@ -1,6 +1,6 @@
 package tier1;
 
-public class BOJ_1_10171 {
+public class BOJ_10171 {
 
 	public static void main(String[] args) {
 
