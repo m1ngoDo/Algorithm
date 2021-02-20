@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 
 public class BOJ_7562 {
 
-	// ½Ã°è ¹æÇâ
+	// ì‹œê³„ ë°©í–¥
 	static int[] dr = {-2, -1, 1, 2, 2, 1, -1, -2};
 	static int[] dc = {1, 2, 2, 1, -1, -2, -2, -1};
 	static int size;
@@ -40,7 +40,7 @@ public class BOJ_7562 {
 			for(int i = 0; i < 8; i++) {
 				int r = now.r + dr[i];
 				int c = now.c + dc[i];
-				// boundary & ¹æ¹® check
+				// boundary & ë°©ë¬¸ check
 				if(r < 0 || c < 0 || r >= size || c >= size || visited[r][c]) continue;
 
 				visited[r][c] = true;
