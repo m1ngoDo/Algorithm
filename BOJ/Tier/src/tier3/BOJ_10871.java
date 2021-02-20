@@ -6,20 +6,25 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class BOJ_3_15552 {
+public class BOJ_10871 {
 
 	public static void main(String[] args) throws Exception {
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
-		int len = Integer.parseInt(br.readLine());
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		int len = Integer.parseInt(st.nextToken());
+		int x = Integer.parseInt(st.nextToken());
+
+		st = new StringTokenizer(br.readLine());
+		int a;
 		
-		StringTokenizer st;
-		
-		for(int i=0; i < len; i++) {
-			st = new StringTokenizer(br.readLine());
-			bw.write(Integer.parseInt(st.nextToken()) + Integer.parseInt(st.nextToken()) + "\n");
+		for(int i = 0; i < len; i++) {
+			a = Integer.parseInt(st.nextToken());
+			if(a < x) {
+				bw.append(a + " ");
+			}
 		}
 		br.close();
 		bw.flush();

@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class BOJ_3_11022 {
+public class BOJ_15552 {
 
 	public static void main(String[] args) throws Exception {
 		
@@ -14,16 +14,12 @@ public class BOJ_3_11022 {
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
 		int len = Integer.parseInt(br.readLine());
-		StringTokenizer st;
-		int a, b, sum;
 		
-		for(int i = 1; i <= len; i++) {
+		StringTokenizer st;
+		
+		for(int i=0; i < len; i++) {
 			st = new StringTokenizer(br.readLine());
-			a = Integer.parseInt(st.nextToken());
-			b = Integer.parseInt(st.nextToken());
-			sum = a + b;
-			bw.append("Case #").append(i + ": ").append(a + " + " + b).append(" = " + sum);
-			bw.newLine();
+			bw.write(Integer.parseInt(st.nextToken()) + Integer.parseInt(st.nextToken()) + "\n");
 		}
 		br.close();
 		bw.flush();

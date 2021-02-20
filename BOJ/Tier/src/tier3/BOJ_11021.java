@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class BOJ_3_11021 {
+public class BOJ_11021 {
 
 	public static void main(String[] args) throws Exception {
 		
