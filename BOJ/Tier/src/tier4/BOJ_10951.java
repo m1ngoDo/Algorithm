@@ -19,5 +19,6 @@ public class BOJ_10951 {
 			b = Integer.parseInt(st.nextToken());
 			System.out.println(a + b);
 		}
+		br.close();
 	}
 }

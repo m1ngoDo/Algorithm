@@ -16,7 +16,10 @@ public class BOJ_10952 {
 			st = new StringTokenizer(br.readLine());
 			a = Integer.parseInt(st.nextToken());
 			b = Integer.parseInt(st.nextToken());
-			if(a == 0 && b == 0) return;
+			if(a == 0 && b == 0) {
+				br.close(); 
+				return;
+			}
 			System.out.println(a + b);
 		}
 	}
