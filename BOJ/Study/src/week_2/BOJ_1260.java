@@ -23,7 +23,7 @@ public class BOJ_1260 {
 		System.out.print(v + " ");
 		
 		for(int i = 1; i < graph.length; i++) {
-			if(graph[v][i] == 1 && !visited[i]) {		// ¿¬°áµÇ¾îÀÖ°í ¹æ¹®ÇÏÁö ¾ÊÀº °æ¿ì
+			if(graph[v][i] == 1 && !visited[i]) {		// ì—°ê²°ë˜ì–´ìžˆê³  ë°©ë¬¸í•˜ì§€ ì•Šì€ ê²½ìš°
 				dfsMatrix(graph, visited, i);
 			}
 		}
@@ -84,17 +84,17 @@ public class BOJ_1260 {
 		int v = Integer.parseInt(st.nextToken());
 		
 		visited = new boolean[n+1];
-		// 2Â÷¿ø ¹è¿­ ¼±¾ð _ index »ç¿ëÇÏ±â À§ÇØ +1
+		// 2ì°¨ì› ë°°ì—´ ì„ ì–¸ _ index ì‚¬ìš©í•˜ê¸° ìœ„í•´ +1
 		int graph[][] = new int[n+1][n+1];		
 		
 		for(int i = 0; i < m; i++) {
 			st = new StringTokenizer(br.readLine());
 			int a = Integer.parseInt(st.nextToken());
 			int b = Integer.parseInt(st.nextToken());
-			graph[a][b] = graph[b][a] = 1;		// ¾ç¹æÇâ
+			graph[a][b] = graph[b][a] = 1;		// ì–‘ë°©í–¥
 		}
 
-		// ³ëµå<ÀÎÁ¢ ³ëµå ¸®½ºÆ®>
+		// ë…¸ë“œ<ì¸ì ‘ ë…¸ë“œ ë¦¬ìŠ¤íŠ¸>
 		ArrayList<ArrayList<Integer>> list = new ArrayList<ArrayList<Integer>>();
 		for(int i = 0; i < n+1; i++) {
 			list.add(new ArrayList<Integer>());
@@ -108,14 +108,14 @@ public class BOJ_1260 {
 			list.get(b).add(a);
 		}
 		
-		// ¹æ¹® ¼ø¼­ Á¤·Ä 
+		// ë°©ë¬¸ ìˆœì„œ ì •ë ¬ 
 		for (int i = 1; i <= n; i++) { 
 			Collections.sort(list.get(i));
 		}
 		
 		br.close();
 		
-		// ÀÎÁ¢ Çà·Ä
+		// ì¸ì ‘ í–‰ë ¬
 		dfsMatrix(graph, visited, v);
 		System.out.println();
 		initVisit();
@@ -124,7 +124,7 @@ public class BOJ_1260 {
 		System.out.println();
 		initVisit();
 		
-		// ÀÎÁ¢ ¸®½ºÆ®
+		// ì¸ì ‘ ë¦¬ìŠ¤íŠ¸
 		dfsList(list, visited, v);
 		System.out.println();
 		initVisit();
