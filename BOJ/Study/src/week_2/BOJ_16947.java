@@ -10,46 +10,46 @@ import java.util.StringTokenizer;
 public class BOJ_16947 {
 
 	static int n, start;
-	static int[] cycle;		// 0 : ¹æ¹® x, 1 : ¹æ¹®, 2 : ¼øÈ¯¼±
+	static int[] cycle;		// 0 : ë°©ë¬¸ x, 1 : ë°©ë¬¸, 2 : ìˆœí™˜ì„ 
 	static int[] answer;
 	static ArrayList<ArrayList<Integer>> list = new ArrayList<ArrayList<Integer>>();
 	
-	// ¼øÈ¯¼± Ã£±â
-	// -2 : cycle Ã£Áö ¸øÇÔ
-	// -1 : cycle Ã£À½ / ÇØ´ç ³ëµå´Â cycle ¾Æ´Ô
-	// >0 : cycle ½ÃÀÛ ³ëµå
+	// ìˆœí™˜ì„  ì°¾ê¸°
+	// -2 : cycle ì°¾ì§€ ëª»í•¨
+	// -1 : cycle ì°¾ìŒ / í•´ë‹¹ ë…¸ë“œëŠ” cycle ì•„ë‹˜
+	// >0 : cycle ì‹œì‘ ë…¸ë“œ
 	public static int isCycle(int before, int current) {
-		if (cycle[current] == 1) return current;	// a : Ã³À½ Àç¹æ¹® ³ëµå = cycle ½ÃÀÛ ³ëµå return
+		if (cycle[current] == 1) return current;	// a : ì²˜ìŒ ì¬ë°©ë¬¸ ë…¸ë“œ = cycle ì‹œì‘ ë…¸ë“œ return
 		cycle[current] = 1;
 		
 		for (int next : list.get(current)) {
 			if (before == next) continue;
 			int check = isCycle(current, next); 
 			if (check == -1) return -1;		
-			if (check >= 0) {						// b : a¿¡¼­ ³Ñ¾î ¿Â ½ÃÀÛ ³ëµå·Î cycle ÆÇ´Ü
+			if (check >= 0) {						// b : aì—ì„œ ë„˜ì–´ ì˜¨ ì‹œì‘ ë…¸ë“œë¡œ cycle íŒë‹¨
 				cycle[current] = 2;					
-				if (current == check) return -1;	// c : cycle ½ÃÀÛ ³ëµåÀÎ °æ¿ì ³ª¸ÓÁö ¸ğµÎ cycle ¾Æ´Ô
+				if (current == check) return -1;	// c : cycle ì‹œì‘ ë…¸ë“œì¸ ê²½ìš° ë‚˜ë¨¸ì§€ ëª¨ë‘ cycle ì•„ë‹˜
 				else return check;
 			}
 		}
-		return -2;		// ¸ğµÎ Å½»öÇØµµ cycle Ã£Áö ¸ø ÇÒ ¶§
+		return -2;		// ëª¨ë‘ íƒìƒ‰í•´ë„ cycle ì°¾ì§€ ëª» í•  ë•Œ
 	}
 
 	public static void getDist() {
 		Queue<Integer> que = new LinkedList<Integer>();
 		for(int i = 1; i < cycle.length; i++) {
 			if(cycle[i] == 2) {
-				if(list.get(i).size() > 2) que.add(i);		// cycleÀÌ¸é¼­ Áö¼± ½ÃÀÛÁ¡ queue¿¡ ³Ö¾îÁÜ
+				if(list.get(i).size() > 2) que.add(i);		// cycleì´ë©´ì„œ ì§€ì„  ì‹œì‘ì  queueì— ë„£ì–´ì¤Œ
 			}
-			else answer[i] = -1;							// Áö¼± Ç¥½Ã
+			else answer[i] = -1;							// ì§€ì„  í‘œì‹œ
 		}
 		
 		while(!que.isEmpty()) {
 			int c = que.poll();
 			for(int i : list.get(c)) {
-				if(answer[i] == -1) {			// Áö¼±ÀÌ°í °Å¸® °è»ê ¾ÈµÇ¾úÀ» ¶§
+				if(answer[i] == -1) {			// ì§€ì„ ì´ê³  ê±°ë¦¬ ê³„ì‚° ì•ˆë˜ì—ˆì„ ë•Œ
 					que.add(i);
-					answer[i] = answer[c] + 1;	// ¾Õ ³ëµå °Å¸® + 1
+					answer[i] = answer[c] + 1;	// ì• ë…¸ë“œ ê±°ë¦¬ + 1
 				}
 			}
 		}
@@ -76,7 +76,7 @@ public class BOJ_16947 {
 		}
 		
 		if(isCycle(0, 1) == -2) {
-			System.out.println("cycle ¾øÀ½");
+			System.out.println("cycle ì—†ìŒ");
 			return;
 		}
 		getDist();
