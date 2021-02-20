@@ -2,16 +2,14 @@ package tier2;
 
 import java.util.Scanner;
 
-public class BOJ_2_1330 {
+public class BOJ_2884 {
 
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
 		int a = sc.nextInt();
 		int b = sc.nextInt();
-
-		if (a > b) System.out.println(">");
-		else if (a < b)	System.out.println("<");
-		else System.out.println("==");
+		
+		System.out.printf("%d %d", b < 45 ? (a < 1 ? a + 23 : a - 1) : a, b < 45 ? b + 15 : b - 45);
 	}
 }
