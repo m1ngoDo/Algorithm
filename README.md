@@ -22,7 +22,7 @@
 |  2주차  | [`1260 DFS와 BFS`](https://www.acmicpc.net/problem/1260) | ![S2] | ![DONE] | [`2638 치즈`](https://www.acmicpc.net/problem/2638) | ![G4] | ![DOING] |
 |  2주차  | [`7562 나이트의 이동`](https://www.acmicpc.net/problem/7562) | ![S2] | ![DONE] | [`16947 서울 지하철 2호선`](https://www.acmicpc.net/problem/16947) | ![G3] | ![DONE] |
 |   |
-|  3주차  | [`1174 줄어드는 숫자`](https://www.acmicpc.net/problem/1174) | ![S1] | ![DONE] | [`1238 파티`](https://www.acmicpc.net/problem/1238) | ![G3] | ![DOING] |
+|  3주차  | [`1174 줄어드는 숫자`](https://www.acmicpc.net/problem/1174) | ![S1] | ![DONE] | [`1238 파티`](https://www.acmicpc.net/problem/1238) | ![G3] | ![DONE] |
 |  3주차  | [`13164 행복 유치원`](https://www.acmicpc.net/problem/13164) | ![S2] | ![DONE] | [`16926 배열 돌리기 1`](https://www.acmicpc.net/problem/16926) | ![S3] | ![DONE] |
 |   |
 
